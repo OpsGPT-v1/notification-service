@@ -21,6 +21,7 @@ app.add_middleware(
 )
 
 app.include_router(notifications.router)
+app.include_router(notifications.router, prefix="/api")
 
 
 @app.on_event("startup")
